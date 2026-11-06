@@ -1,0 +1,95 @@
+{
+  "price_date": "Q4 2026",
+  "vat_construction": 0.135,
+  "rounding": 5000,
+  "per_m2_display_rounding": 50,
+  "contingency_note_pct": 10,
+  "show_case_prices": false,
+  "categories": {
+    "refurb_with_extension": {
+      "enabled": true,
+      "low": 1550,
+      "high": 2550,
+      "card_area": [
+        200,
+        250
+      ],
+      "data_basis": "two contractor estimates (Sep 2026) plus market data"
+    },
+    "extension": {
+      "enabled": false,
+      "low": 2200,
+      "high": 3500,
+      "card_area": [
+        25,
+        35
+      ],
+      "data_basis": "market data only, calibrate before enabling"
+    },
+    "new_home": {
+      "enabled": false,
+      "low": 2300,
+      "high": 3300,
+      "card_area": [
+        190,
+        190
+      ],
+      "data_basis": "market data only, calibrate before enabling"
+    },
+    "refurb_only": {
+      "enabled": false,
+      "low": 1000,
+      "high": 2400,
+      "card_area": [
+        100,
+        200
+      ],
+      "data_basis": "no data, do not enable"
+    }
+  },
+  "spec_factor": {
+    "essential": 1.0,
+    "standard": 1.0,
+    "premium": 1.0
+  },
+  "location_factor": {
+    "dublin": 1.0,
+    "kildare_meath_wicklow": 1.0,
+    "other_leinster": 1.0
+  },
+  "show_spec_input": false,
+  "show_location_input": false,
+  "area_limits": {
+    "min": 10,
+    "max": 1000
+  },
+  "placeholders": {
+    "SURVEY_FEE": null,
+    "SURVEY_CREDIT_TEXT": null,
+    "BOLONI_KITCHEN_FROM": null,
+    "BOLONI_WARDROBE_FROM": null,
+    "DESIGN_FEE_PCT": null,
+    "NEWBUILD_EXTRAS_PCT": null
+  },
+  "copy_facts": {
+    "new_home_bedrooms": 4
+  },
+  "case_studies": [
+    {
+      "id": "south-county-dublin",
+      "location": "South County Dublin",
+      "total_area": 275,
+      "house_area": 235,
+      "room_area": 40,
+      "estimate_date": "Sep 2026",
+      "estimate_incl_vat": 482962
+    },
+    {
+      "id": "dublin-14",
+      "location": "Dublin 14",
+      "total_area": 223.9,
+      "estimate_date": "Sep 2026",
+      "estimate_incl_vat": 469525
+    }
+  ]
+}
