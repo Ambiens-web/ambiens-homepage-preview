@@ -330,15 +330,6 @@ Object.assign(REDESIGN_COPY,{
 "我們的理念",
 "私たちのアプローチ"
 ],
-"Guides": [
-"Guides",
-"Ratgeber",
-"Guide",
-"Guías",
-"指南",
-"指南",
-"ガイド"
-],
 "Contact": [
 "Contact",
 "Kontakt",
@@ -582,24 +573,6 @@ Object.assign(REDESIGN_COPY,{
 "切實的支持",
 "実務的なサポート"
 ],
-"Guides & Insights": [
-"Guides et conseils",
-"Ratgeber & Einblicke",
-"Guide e approfondimenti",
-"Guías e ideas",
-"指南与见解",
-"指南與見解",
-"ガイドとヒント"
-],
-"Ideas, Materials & Practical Guidance.": [
-"Idées, matériaux et conseils pratiques.",
-"Ideen, Materialien & praktische Tipps.",
-"Idee, materiali e consigli pratici.",
-"Ideas, materiales y consejos prácticos.",
-"灵感、材料与实用建议。",
-"靈感、材料與實用建議。",
-"アイデア、素材、実践的なアドバイス。"
-],
 "Let's Create Something Considered.": [
 "Créons ensemble quelque chose de réfléchi.",
 "Lassen Sie uns etwas Durchdachtes schaffen.",
@@ -798,42 +771,6 @@ Object.assign(REDESIGN_COPY,{
 "查看全部方案",
 "すべてのソリューションを見る"
 ],
-"How We Plan a Bespoke Kitchen": [
-"Comment nous planifions une cuisine sur mesure",
-"So planen wir eine Maßküche",
-"Come progettiamo una cucina su misura",
-"Cómo planificamos una cocina a medida",
-"我们如何规划定制厨房",
-"我們如何規劃訂製廚房",
-"オーダーメイドキッチンの進め方"
-],
-"How We Choose Materials and Finishes": [
-"Comment nous choisissons matériaux et finitions",
-"So wählen wir Materialien und Oberflächen",
-"Come scegliamo materiali e finiture",
-"Cómo elegimos materiales y acabados",
-"我们如何挑选材料与饰面",
-"我們如何挑選材料與飾面",
-"素材と仕上げの選び方"
-],
-"How a Whole-Home Project Runs": [
-"Le déroulement d’un projet pour toute la maison",
-"So läuft ein Projekt fürs ganze Zuhause ab",
-"Come si svolge un progetto per tutta la casa",
-"Cómo se desarrolla un proyecto de todo el hogar",
-"全屋项目如何进行",
-"全屋項目如何進行",
-"住まい全体のプロジェクトの流れ"
-],
-"Materials & Finishes": [
-"Matériaux et finitions",
-"Materialien & Oberflächen",
-"Materiali e finiture",
-"Materiales y acabados",
-"材料与饰面",
-"材料與飾面",
-"素材と仕上げ"
-],
 "Made-to-measure BOLONI joinery, as exclusive Leinster partner.": [
 "Menuiserie BOLONI sur mesure, en tant que partenaire exclusif du Leinster.",
 "BOLONI-Maßmöbel, als exklusiver Partner in Leinster.",
@@ -851,6 +788,78 @@ Object.assign(REDESIGN_COPY,{
 "按住宅所需，安排建筑师、工程师与施工人员。",
 "按住宅所需，安排建築師、工程師與施工人員。",
 "住まいに応じて建築家、エンジニア、職人が参加します。"
+],
+"Service Resources": [
+"Ressources sur nos services",
+"Service-Informationen",
+"Risorse sui servizi",
+"Recursos de servicios",
+"服务资源",
+"服務資源",
+"サービス資料"
+],
+"Practical Information for Your Project.": [
+"Des informations pratiques pour votre projet.",
+"Praktische Informationen für Ihr Projekt.",
+"Informazioni pratiche per il tuo progetto.",
+"Información práctica para tu proyecto.",
+"为您的项目提供实用信息。",
+"為您的項目提供實用資訊。",
+"プロジェクトに役立つ実用的な情報。"
+],
+"Resources": [
+"Ressources",
+"Ressourcen",
+"Risorse",
+"Recursos",
+"资源",
+"資源",
+"リソース"
+],
+"Our Kitchen Service": [
+"Notre service cuisine",
+"Unser Küchen-Service",
+"Il nostro servizio cucine",
+"Nuestro servicio de cocinas",
+"我们的厨房服务",
+"我們的廚房服務",
+"キッチンサービス"
+],
+"Our Design Service": [
+"Notre service de conception",
+"Unser Design-Service",
+"Il nostro servizio di progettazione",
+"Nuestro servicio de diseño",
+"我们的设计服务",
+"我們的設計服務",
+"デザインサービス"
+],
+"How a Project Runs": [
+"Le déroulement d’un projet",
+"So läuft ein Projekt ab",
+"Come si svolge un progetto",
+"Cómo se desarrolla un proyecto",
+"项目如何进行",
+"項目如何進行",
+"プロジェクトの流れ"
+],
+"Service overview": [
+"Présentation du service",
+"Leistungsübersicht",
+"Panoramica del servizio",
+"Resumen del servicio",
+"服务概览",
+"服務概覽",
+"サービス概要"
+],
+"Process overview": [
+"Présentation de la méthode",
+"Ablaufübersicht",
+"Panoramica del processo",
+"Resumen del proceso",
+"流程概览",
+"流程概覽",
+"プロセス概要"
 ]
 });
 const REDESIGN_LANGS=['fr','de','it','es','zh-Hans','zh-Hant','ja'];
