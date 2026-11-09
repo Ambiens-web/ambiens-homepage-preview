@@ -96,7 +96,7 @@ const BA={idesign:['img6/idesign-before.webp','img6/idesign-after.webp'],plannin
 const dlg=document.getElementById('svcDlg');let dlgId=null,lastFocus=null;
 function baHTML(id){const im=BA[id];
   const side=(cls,lab,src)=>`<div class="layer ${cls}">${src?`<img src="${src}" alt="${lab} – ${DETAIL[id].t}">`:`<div class="ph-slot">${lab} image</div>`}</div>`;
-  return side('before','Before',im&&im[0])+side('after','After',im&&im[1])+'<span class="tag2 tb">Before</span><span class="tag2 ta">After</span><span class="handle"></span><input type="range" min="0" max="100" value="50" aria-label="Compare before and after">';}
+  return side('before','Before',im&&im[0])+side('after','After',im&&im[1])+'<span class="tag2 tb">Before</span><span class="tag2 ta">After</span><span class="tag2 tc">Concept image</span><span class="handle"></span><input type="range" min="0" max="100" value="50" aria-label="Compare before and after">';}
 function openSvc(id,pricingCategory=null){const d=DETAIL[id];if(!d)return;dlgId=id;dlgPricingCategory=pricingCategory;lastFocus=document.activeElement;
   document.getElementById('dlgGrp').textContent=d.g;document.getElementById('dlgTitle').textContent=d.t;document.getElementById('dlgLead').textContent=d.lead;const sub=CHOICES.flatMap(x=>x[1]).find(x=>x[0]===id);document.getElementById('dlgSub').textContent=sub?sub[2]:'';
   document.getElementById('dlgInc').innerHTML=d.inc.map(x=>`<li>${x}</li>`).join('');
@@ -241,18 +241,20 @@ document.querySelectorAll('#seg button').forEach(b=>b.addEventListener('click',(
 /* form */
 const typeSel=document.getElementById('f-type');
 typeSel.replaceChildren();
-[...PRESETS.map(p=>[p[0],p[1]]),['custom','My own plan (from the planner)'],['unsure','Not sure yet']].forEach(([v,t])=>{const o=document.createElement('option');o.value=v;o.textContent=t;o.defaultSelected=v==='unsure';typeSel.appendChild(o)});typeSel.value='unsure';
+[['','Please select'],['property-assessment','Property Assessment'],['design-planning','Architectural Design & Planning'],['renovation','Renovation & Construction Management'],['interiors','Interiors & Furnishing'],['turnkey','Turnkey Living'],['unsure','Other / Not Sure Yet']].forEach(([v,t])=>{const o=document.createElement('option');o.value=v;o.textContent=t;o.defaultSelected=v==='';typeSel.appendChild(o)});typeSel.value='';
+// A plan from the Planner brings its own project type, listed only once a plan is attached.
+function selectPlanType(value){const plan=[...PRESETS.map(p=>[p[0],p[1]]),['custom','My own plan (from the planner)']].find(x=>x[0]===value);if(!plan)return;if(![...typeSel.options].some(o=>o.value===value)){const o=document.createElement('option');o.value=value;o.textContent=plan[1];typeSel.insertBefore(o,typeSel.options[1]);translateDOM(typeSel)}typeSel.value=value}
 function planText(){const {act}=resolve(user,approval);const lo=schedule(act,0),hi=schedule(act,1);return 'My plan: '+([...user].map(id=>SHORT[id]).join(', ')||'nothing chosen')+'. Planning permission: '+((user.has('planning')||user.has('newbuild'))?'needed':'not needed')+'.'}
 document.getElementById('send').addEventListener('click',()=>window.AmbiensUI.attachPlan());
-const rules={name:v=>v.trim()?'':'Enter your name.',email:v=>/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v.trim())?'':'Enter an email address like name@example.com.',area:v=>v.trim()?'':'Enter your area or Eircode, so we know where the house is.'};
+const rules={name:v=>v.trim()?'':'Enter your name.',email:v=>/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v.trim())?'':'Enter an email address like name@example.com.',area:v=>v.trim()?'':'Enter your area or Eircode, so we know where the house is.',type:v=>v?'':'Please select a project type.',msg:v=>v.trim()||!document.getElementById('planAttached').hidden?'':'Tell us a little about your project.'};
 function check(n){const el=document.getElementById('f-'+n),m=rules[n](el.value),f=el.closest('.field');document.getElementById('e-'+n).textContent=m;translateDOM();
   if(m){f.setAttribute('data-err','');el.setAttribute('aria-invalid','true');el.setAttribute('aria-describedby','e-'+n)}else{f.removeAttribute('data-err');el.removeAttribute('aria-invalid')}return !m}
 Object.keys(rules).forEach(n=>document.getElementById('f-'+n).addEventListener('blur',()=>check(n)));
 /* Hero: three slides. Only the visitor changes them, so nothing moves while someone is reading. */
 const HERO_COPY=[
-  {eyebrow:'Home Design & Coordinated Solutions',title:'One Home.|One *Considered*|Vision.',description:'Thoughtfully bringing together design, bespoke interiors, product selection and coordinated solutions for contemporary living.',action:'Explore Our Solutions',href:'/services/'},
-  {eyebrow:'Bespoke Joinery',title:'Bespoke Kitchens|and Interiors.',description:'Explore made-to-measure kitchens, wardrobes and interior joinery designed around your space.',action:'Explore our joinery',href:'/joinery/'},
-  {eyebrow:'Extensions & Garden Rooms',title:'More Room|for Living.',description:'Create space to work, relax or gather, with design and project coordination shaped around your home.',action:'Plan your extra space',href:'/services/extensions/'}
+  {eyebrow:'Home Design & Coordination',title:'Your home renovation, designed|and managed from first plan|to handover.',description:'From architectural planning and building works to bespoke interiors and furnishing, Ambiens brings the different stages of your renovation together.',action:'Book a consultation',href:'/#contact',second:'Explore Our Solutions',secondHref:'/services/'},
+  {eyebrow:'Bespoke Joinery',title:'Bespoke Kitchens|and Interiors.',description:'Explore made-to-measure kitchens, wardrobes and interior joinery designed around your space.',action:'Explore our joinery',href:'/joinery/',second:'Discuss Your Project',secondHref:'/#contact'},
+  {eyebrow:'Extensions & Garden Rooms',title:'More Room|for Living.',description:'Create space to work, relax or gather, with design and project coordination shaped around your home.',action:'Plan your extra space',href:'/services/extensions/',second:'Discuss Your Project',secondHref:'/#contact'}
 ];
 const hero=document.getElementById('top');
 const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
@@ -270,13 +272,15 @@ function writeHeroTitle(el,title){
 function show(i){
   const changed=si!==i;si=i;
   document.querySelectorAll('.ed-slide').forEach(s=>{const active=+s.dataset.i===i;s.classList.toggle('on',active);s.setAttribute('aria-hidden',String(!active));});
-  document.getElementById('heroCount').textContent='0'+(i+1);
+  document.querySelectorAll('.ed-hero-controls button').forEach((b,n)=>{b.classList.toggle('on',n===i);if(n===i)b.setAttribute('aria-current','true');else b.removeAttribute('aria-current')});
   const copy=HERO_COPY[i];
   document.getElementById('heroEyebrow').textContent=copy.eyebrow;
   writeHeroTitle(document.getElementById('heroTitle'),copy.title);
   document.getElementById('heroDescription').textContent=copy.description;
   document.getElementById('heroActionLabel').textContent=copy.action;
   document.getElementById('heroAction').setAttribute('href',(location.protocol==='file:'?'#':'')+copy.href);
+  document.getElementById('heroSecondaryLabel').textContent=copy.second;
+  document.getElementById('heroSecondary').setAttribute('href',(location.protocol==='file:'?'#':'')+copy.secondHref);
   translateDOM(hero);
   copyMotion?.cancel();
   if(changed&&!reduce)copyMotion=hero.querySelector('.ed-hero-text').animate([{opacity:.4},{opacity:1}],{duration:500,easing:'ease-out'});
@@ -292,12 +296,11 @@ function measureHeroCopy(){
   measure.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));
   measure.style.cssText='position:absolute;visibility:hidden;pointer-events:none;min-height:0;width:'+source.getBoundingClientRect().width+'px;';
   source.parentElement.append(measure);let height=0;
-  HERO_COPY.forEach(copy=>{measure.querySelector('.ed-eyebrow').textContent=trs(copy.eyebrow);writeHeroTitle(measure.querySelector('h1'),copy.title);measure.querySelector('h1+p').textContent=trs(copy.description);measure.querySelector('.ed-btn span').textContent=trs(copy.action);height=Math.max(height,measure.getBoundingClientRect().height);});
+  HERO_COPY.forEach(copy=>{measure.querySelector('.ed-eyebrow').textContent=trs(copy.eyebrow);writeHeroTitle(measure.querySelector('h1'),copy.title);measure.querySelector('h1+p').textContent=trs(copy.description);measure.querySelector('.ed-btn span').textContent=trs(copy.action);measure.querySelector('.ed-btn-outline span').textContent=trs(copy.second);height=Math.max(height,measure.getBoundingClientRect().height);});
   measure.remove();source.style.setProperty('--hero-copy-height',Math.ceil(height)+'px');measuringHero=false;
 }
 function setHeroActive(active){if(active)measureHeroCopy();}
-document.getElementById('heroPrev').addEventListener('click',()=>show((si+2)%3));
-document.getElementById('heroNext').addEventListener('click',()=>show((si+1)%3));
+document.querySelectorAll('.ed-hero-controls button').forEach(b=>b.addEventListener('click',()=>show(+b.dataset.slide)));
 // Swipe between slides on touch screens; vertical scrolling is left alone.
 let swipeX=null,swipeY=null;
 hero.addEventListener('touchstart',e=>{swipeX=e.touches[0].clientX;swipeY=e.touches[0].clientY},{passive:true});

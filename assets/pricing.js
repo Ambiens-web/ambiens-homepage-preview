@@ -75,7 +75,7 @@ function renderEstimator(){const root=document.getElementById('budgetEstimator')
   fallback.hidden=true;result.appendChild(pricingNode('p',pricingText('From {low} incl. VAT',{low:pricingMoney(calc.low)}),'pricing-result'));result.appendChild(pricingNode('p',pricingText('Indicative range: {low} – {high}',{low:pricingMoney(calc.low),high:pricingMoney(calc.high)}),'pricing-range'));pricingLegal(result);pricingLink(result,'Get your fixed price → book a survey',true);
   if(pricingCopy[pricingState.category]){const b=pricingNode('button',trs('Budget details'),'link');b.type='button';b.addEventListener('click',()=>openSvc(pricingState.category==='new_home'?'newbuild':pricingState.category==='extension'?'extension':'refurb',pricingState.category));result.appendChild(b)}
 }
-function prefillEstimate(){const calc=currentEstimate();if(!calc||user.has('protected'))return;const key=Object.keys(pricingMap).find(k=>pricingMap[k]===pricingState.category);if([...typeSel.options].some(o=>o.value===key))typeSel.value=key;
+function prefillEstimate(){const calc=currentEstimate();if(!calc||user.has('protected'))return;const key=Object.keys(pricingMap).find(k=>pricingMap[k]===pricingState.category);selectPlanType(key);
   const m=document.getElementById('f-msg'),body=estimatorPrefix&&m.value.startsWith(estimatorPrefix)?m.value.slice(estimatorPrefix.length).replace(/^\n+/,''):m.value;
   estimatorPrefix=pricingText('Estimator: {project_type}, {area} m², {low}–{high}',{project_type:trs(pricingNames[pricingState.category]),area:pricingNumber(Number(document.getElementById('budget-area').value)),low:pricingMoney(calc.low),high:pricingMoney(calc.high)});m.value=estimatorPrefix+(body?'\n'+body:'');
   if(window.AmbiensUI)window.AmbiensUI.prepareEstimate();

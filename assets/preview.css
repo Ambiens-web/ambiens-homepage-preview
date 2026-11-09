@@ -1,2 +1,8 @@
 /* Review build only. */
 .preview-flag{padding:8px var(--ed-gutter);background:var(--brown);color:var(--cream);font:500 12px/1.4 var(--ed-sans);text-align:center}
+.ed-concept{margin-right:12px;font:500 12px/1 var(--ed-sans);letter-spacing:.02em;color:#ffffffd9}
+.ed-review-note{grid-column:2/-1;margin:-4px 0 0;font-size:12.5px;line-height:1.4;color:#d9cbb8}
+.review-placeholder .ed-actions{margin-top:24px;align-items:center}
+.review-placeholder .ed-tag{display:inline-block;margin:0 0 14px;padding:4px 10px;border-radius:4px;background:var(--cream-deep);font:600 12.5px/1.4 var(--ed-sans)}
+@media(max-width:960px){.ed-review-note{grid-column:1/-1}}
+@media(max-width:700px){.ed-concept{position:absolute;right:calc(100% + 0px);white-space:nowrap;margin-right:6px}.ed-review-note{margin-top:2px}}

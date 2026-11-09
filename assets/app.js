@@ -127,7 +127,7 @@
     breadcrumbs([...(r.crumbs||[]),[r.title,null]]);
     document.querySelectorAll('#primaryNav a').forEach(a=>{const u=resolveURL(a.getAttribute('href')),on=!u.hash&&u.pathname===r.nav;a.classList.toggle('active',on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
     closeMenu();setHeroActive(key==='home');
-    if(key==='home'&&here.hash==='#contact'&&planUsed&&!skipAutoAttach&&typeSel.value==='unsure'){typeSel.value=preset||'custom';attached=true;syncAttachment()}
+    if(key==='home'&&here.hash==='#contact'&&planUsed&&!skipAutoAttach&&['','unsure'].includes(typeSel.value)){selectPlanType(preset||'custom');attached=true;syncAttachment()}
     skipAutoAttach=false;
     meta(r,path);
     localLinks();translateDOM();routing=false;lastRoutedURL=location.href;persist();
@@ -153,7 +153,7 @@
     else if(activeView!=='home'&&h)document.title=h.textContent+' | Ambiens Home Design';
     persist();
   }
-  function attachPlan(){planUsed=true;typeSel.value=preset||'custom';attached=true;syncAttachment();navigate('/#contact');}
+  function attachPlan(){planUsed=true;selectPlanType(preset||'custom');attached=true;syncAttachment();navigate('/#contact');}
   function prepareEstimate(){attached=false;skipAutoAttach=true;syncAttachment()}
   window.AmbiensUI={navigate,refresh,customised,languageChanged,attachPlan,prepareEstimate};
   document.addEventListener('click',e=>{
