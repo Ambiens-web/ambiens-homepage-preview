@@ -366,24 +366,6 @@ Object.assign(REDESIGN_COPY,{
 "一個家，眾多決定，一種用心的方式。",
 "ひとつの住まい。多くの決断。考え抜かれたひとつのアプローチ。"
 ],
-"Creating a cohesive home involves more than selecting individual products. From kitchens and bathrooms to wardrobes, furniture and finishes, Ambiens brings design, product selection, sourcing and delivery coordination together, for a more connected and considered home.": [
-"Créer une maison cohérente ne se limite pas à choisir des produits. Des cuisines et salles de bains aux dressings, meubles et finitions, Ambiens réunit conception, sélection des produits, approvisionnement et coordination des livraisons, pour une maison plus harmonieuse et réfléchie.",
-"Ein stimmiges Zuhause entsteht nicht allein durch die Wahl einzelner Produkte. Von Küchen und Bädern bis zu Schränken, Möbeln und Oberflächen vereint Ambiens Design, Produktauswahl, Beschaffung und Lieferkoordination, für ein stimmigeres und durchdachtes Zuhause.",
-"Creare una casa coerente significa molto più che scegliere singoli prodotti. Dalle cucine e dai bagni agli armadi, agli arredi e alle finiture, Ambiens riunisce design, selezione dei prodotti, approvvigionamento e coordinamento delle consegne, per una casa più armoniosa e ponderata.",
-"Crear un hogar coherente es mucho más que elegir productos sueltos. Desde cocinas y baños hasta armarios, muebles y acabados, Ambiens reúne diseño, selección de productos, abastecimiento y coordinación de entregas, para un hogar más armonioso y meditado.",
-"打造协调统一的家，不只是挑选单件产品。从厨房、卫浴到衣柜、家具与饰面，Ambiens 将设计、产品甄选、采购与配送统筹整合在一起，让家更连贯、更用心。",
-"打造協調統一的家，不只是挑選單件產品。從廚房、衛浴到衣櫃、家具與飾面，Ambiens 將設計、產品甄選、採購與配送統籌整合在一起，讓家更連貫、更用心。",
-"統一感のある住まいづくりは、製品を個別に選ぶだけでは実現しません。キッチンやバスルームからワードローブ、家具、仕上げまで、Ambiensはデザイン、製品選定、調達、配送の調整をひとつにまとめ、つながりのある考え抜かれた住まいを実現します。"
-],
-"Discover Our Approach": [
-"Découvrir notre approche",
-"Unseren Ansatz entdecken",
-"Scopri il nostro approccio",
-"Descubre nuestro enfoque",
-"了解我们的理念",
-"了解我們的理念",
-"アプローチを見る"
-],
 "Products & Spaces": [
 "Produits et espaces",
 "Produkte & Räume",
@@ -455,15 +437,6 @@ Object.assign(REDESIGN_COPY,{
 "精致的卫浴空间，兼具舒适、品质与持久性能。",
 "精緻的衛浴空間，兼具舒適、品質與持久性能。",
 "快適さと品質、長く続く性能を兼ね備えた上質なバスルーム。"
-],
-"Detail page coming soon. Ask us about bathrooms.": [
-"Page détaillée bientôt disponible. Interrogez-nous sur les salles de bains.",
-"Detailseite folgt in Kürze. Fragen Sie uns zu Bädern.",
-"Pagina di dettaglio in arrivo. Chiedici informazioni sui bagni.",
-"Página de detalle próximamente. Pregúntanos por los baños.",
-"详情页即将上线。欢迎咨询卫浴。",
-"詳情頁即將上線。歡迎諮詢衛浴。",
-"詳細ページは近日公開予定です。バスルームについてはお問い合わせください。"
 ],
 "Furniture & Finishes": [
 "Meubles et finitions",
@@ -546,33 +519,6 @@ Object.assign(REDESIGN_COPY,{
 "採購與統籌",
 "調達と調整"
 ],
-"Manage procurement, quality and project logistics.": [
-"Gérer les achats, la qualité et la logistique du projet.",
-"Einkauf, Qualität und Projektlogistik steuern.",
-"Gestire acquisti, qualità e logistica del progetto.",
-"Gestionar las compras, la calidad y la logística del proyecto.",
-"管理采购、品质与项目物流。",
-"管理採購、品質與項目物流。",
-"調達、品質、プロジェクトの物流を管理します。"
-],
-"Delivery & Completion": [
-"Livraison et finalisation",
-"Lieferung & Fertigstellung",
-"Consegna e completamento",
-"Entrega y finalización",
-"交付与完工",
-"交付與完工",
-"納品と完了"
-],
-"Coordinate delivery and installation for a smooth, well-finished result.": [
-"Coordonner la livraison et la pose pour un résultat fluide et bien fini.",
-"Lieferung und Montage koordinieren, für ein reibungsloses und sauberes Ergebnis.",
-"Coordinare consegna e installazione per un risultato fluido e ben rifinito.",
-"Coordinar la entrega y la instalación para un resultado fluido y bien acabado.",
-"统筹配送与安装，让成果顺畅而精致。",
-"統籌配送與安裝，讓成果順暢而精緻。",
-"配送と設置を調整し、スムーズで丁寧な仕上がりへ。"
-],
 "Understand Our Process": [
 "Comprendre notre méthode",
 "Unseren Ablauf verstehen",
@@ -609,15 +555,6 @@ Object.assign(REDESIGN_COPY,{
 "全屋視角",
 "住まい全体を見る視点"
 ],
-"One design for the whole house before any work starts, so every room, finish and piece of joinery fits together.": [
-"Une seule conception pour toute la maison avant le début des travaux, pour que chaque pièce, finition et menuiserie s’accordent.",
-"Ein Entwurf für das ganze Haus, bevor die Arbeiten beginnen, damit jeder Raum, jede Oberfläche und jedes Möbelstück zusammenpasst.",
-"Un unico progetto per tutta la casa prima dell’inizio dei lavori, perché ogni stanza, finitura e arredo stiano bene insieme.",
-"Un solo diseño para toda la casa antes de empezar la obra, para que cada estancia, acabado y pieza de carpintería encajen.",
-"开工前先完成全屋统一设计，让每个房间、饰面与木作彼此协调。",
-"開工前先完成全屋統一設計，讓每個房間、飾面與木作彼此協調。",
-"工事の前に住まい全体をひとつのデザインにまとめ、各部屋、仕上げ、造作家具を調和させます。"
-],
 "Integrated Product Selection": [
 "Une sélection de produits intégrée",
 "Integrierte Produktauswahl",
@@ -627,7 +564,15 @@ Object.assign(REDESIGN_COPY,{
 "一體化產品甄選",
 "一体的な製品選定"
 ],
-"Project Coordination": ["Coordination de projet", "Projektkoordination", "Coordinamento del progetto", "Coordinación del proyecto", "项目统筹", "項目統籌", "プロジェクト調整"],
+"Project Coordination": [
+"Coordination de projet",
+"Projektkoordination",
+"Coordinamento del progetto",
+"Coordinación del proyecto",
+"项目统筹",
+"項目統籌",
+"プロジェクト調整"
+],
 "Practical Support": [
 "Un accompagnement concret",
 "Praktische Unterstützung",
@@ -654,96 +599,6 @@ Object.assign(REDESIGN_COPY,{
 "灵感、材料与实用建议。",
 "靈感、材料與實用建議。",
 "アイデア、素材、実践的なアドバイス。"
-],
-"Planning a Bespoke Kitchen": [
-"Planifier une cuisine sur mesure",
-"Eine Maßküche planen",
-"Progettare una cucina su misura",
-"Planificar una cocina a medida",
-"规划定制厨房",
-"規劃訂製廚房",
-"オーダーメイドキッチンの計画"
-],
-"Choosing Materials for Your Home": [
-"Choisir les matériaux de votre maison",
-"Materialien für Ihr Zuhause wählen",
-"Scegliere i materiali per la tua casa",
-"Elegir los materiales de tu hogar",
-"为您的家挑选材料",
-"為您的家挑選材料",
-"住まいの素材選び"
-],
-"Coordinating a Whole-Home Project": [
-"Coordonner un projet pour toute la maison",
-"Ein Projekt fürs ganze Zuhause koordinieren",
-"Coordinare un progetto per tutta la casa",
-"Coordinar un proyecto de todo el hogar",
-"统筹全屋项目",
-"統籌全屋項目",
-"住まい全体のプロジェクト調整"
-],
-"Design Guide": [
-"Guide de conception",
-"Design-Ratgeber",
-"Guida al design",
-"Guía de diseño",
-"设计指南",
-"設計指南",
-"デザインガイド"
-],
-"Materials": [
-"Matériaux",
-"Materialien",
-"Materiali",
-"Materiales",
-"材料",
-"材料",
-"素材"
-],
-"Inspiration": [
-"Inspiration",
-"Inspiration",
-"Ispirazione",
-"Inspiración",
-"灵感",
-"靈感",
-"インスピレーション"
-],
-"Full guide coming soon": [
-"Guide complet bientôt disponible",
-"Ausführlicher Ratgeber folgt in Kürze",
-"Guida completa in arrivo",
-"Guía completa próximamente",
-"完整指南即将上线",
-"完整指南即將上線",
-"ガイド全文は近日公開予定"
-],
-"See our kitchens": [
-"Voir nos cuisines",
-"Unsere Küchen ansehen",
-"Scopri le nostre cucine",
-"Ver nuestras cocinas",
-"查看我们的厨房",
-"查看我們的廚房",
-"キッチンを見る"
-],
-"See our design approach": [
-"Voir notre approche de conception",
-"Unseren Designansatz ansehen",
-"Scopri il nostro approccio al design",
-"Ver nuestro enfoque de diseño",
-"查看我们的设计理念",
-"查看我們的設計理念",
-"デザインのアプローチを見る"
-],
-"See our process": [
-"Voir notre méthode",
-"Unseren Ablauf ansehen",
-"Scopri il nostro processo",
-"Ver nuestro proceso",
-"查看我们的流程",
-"查看我們的流程",
-"進め方を見る"
 ],
 "Let's Create Something Considered.": [
 "Créons ensemble quelque chose de réfléchi.",
@@ -826,42 +681,6 @@ Object.assign(REDESIGN_COPY,{
 "愛爾蘭都柏林",
 "アイルランド、ダブリン"
 ],
-"Privacy Policy": [
-"Politique de confidentialité",
-"Datenschutzerklärung",
-"Informativa sulla privacy",
-"Política de privacidad",
-"隐私政策",
-"隱私政策",
-"プライバシーポリシー"
-],
-"Terms of Use": [
-"Conditions d’utilisation",
-"Nutzungsbedingungen",
-"Condizioni d’uso",
-"Condiciones de uso",
-"使用条款",
-"使用條款",
-"利用規約"
-],
-"Cookies": [
-"Cookies",
-"Cookies",
-"Cookie",
-"Cookies",
-"Cookie 政策",
-"Cookie 政策",
-"Cookie"
-],
-"Coming soon": [
-"Bientôt disponible",
-"In Kürze verfügbar",
-"In arrivo",
-"Próximamente",
-"即将上线",
-"即將上線",
-"近日公開"
-],
 "All rights reserved.": [
 "Tous droits réservés.",
 "Alle Rechte vorbehalten.",
@@ -879,6 +698,159 @@ Object.assign(REDESIGN_COPY,{
 "我们到您家中见面、测量，并确定您希望达成的目标。",
 "我們到您家中見面、測量，並確定您希望達成的目標。",
 "ご自宅にお伺いして採寸し、実現したいことを一緒に確認します。"
+],
+"Creating a cohesive home involves more than selecting individual products. From kitchens and bathrooms to wardrobes, furniture and finishes, Ambiens brings design, product selection, sourcing and delivery coordination together — for a more connected and considered home.": [
+"Créer une maison cohérente ne se limite pas à choisir des produits. Des cuisines et salles de bains aux dressings, meubles et finitions, Ambiens réunit conception, sélection des produits, approvisionnement et coordination des livraisons, pour une maison plus harmonieuse et réfléchie.",
+"Ein stimmiges Zuhause entsteht nicht allein durch die Wahl einzelner Produkte. Von Küchen und Bädern bis zu Schränken, Möbeln und Oberflächen vereint Ambiens Design, Produktauswahl, Beschaffung und Lieferkoordination, für ein stimmigeres und durchdachtes Zuhause.",
+"Creare una casa coerente significa molto più che scegliere singoli prodotti. Dalle cucine e dai bagni agli armadi, agli arredi e alle finiture, Ambiens riunisce design, selezione dei prodotti, approvvigionamento e coordinamento delle consegne, per una casa più armoniosa e ponderata.",
+"Crear un hogar coherente es mucho más que elegir productos sueltos. Desde cocinas y baños hasta armarios, muebles y acabados, Ambiens reúne diseño, selección de productos, abastecimiento y coordinación de entregas, para un hogar más armonioso y meditado.",
+"打造协调统一的家，不只是挑选单件产品。从厨房、卫浴到衣柜、家具与饰面，Ambiens 将设计、产品甄选、采购与配送统筹整合在一起，让家更连贯、更用心。",
+"打造協調統一的家，不只是挑選單件產品。從廚房、衛浴到衣櫃、家具與飾面，Ambiens 將設計、產品甄選、採購與配送統籌整合在一起，讓家更連貫、更用心。",
+"統一感のある住まいづくりは、製品を個別に選ぶだけでは実現しません。キッチンやバスルームからワードローブ、家具、仕上げまで、Ambiensはデザイン、製品選定、調達、配送の調整をひとつにまとめ、つながりのある考え抜かれた住まいを実現します。"
+],
+"Bespoke Kitchens|and Interiors.": [
+"Cuisines et intérieurs|sur mesure.",
+"Maßküchen|und Innenräume.",
+"Cucine e interni|su misura.",
+"Cocinas e interiores|a medida.",
+"定制厨房|与室内空间。",
+"訂製廚房|與室內空間。",
+"オーダーメイドの|キッチンと内装。"
+],
+"More Room|for Living.": [
+"Plus d’espace|pour vivre.",
+"Mehr Raum|zum Leben.",
+"Più spazio|per vivere.",
+"Más espacio|para vivir.",
+"为生活|多留一处空间。",
+"為生活|多留一處空間。",
+"暮らしに|もっとゆとりを。"
+],
+"Explore Whole-Home Solutions": [
+"Découvrir les solutions pour la maison",
+"Lösungen fürs ganze Zuhause",
+"Scopri le soluzioni per la casa",
+"Descubre las soluciones para el hogar",
+"了解全屋解决方案",
+"了解全屋解決方案",
+"住まい全体のソリューションを見る"
+],
+"Ask about bathrooms": [
+"Se renseigner sur les salles de bains",
+"Zu Bädern anfragen",
+"Chiedi informazioni sui bagni",
+"Pregunta por los baños",
+"咨询卫浴",
+"諮詢衛浴",
+"バスルームについて問い合わせる"
+],
+"Coordinate procurement, suppliers and project logistics.": [
+"Coordonner les achats, les fournisseurs et la logistique du projet.",
+"Einkauf, Lieferanten und Projektlogistik koordinieren.",
+"Coordinare acquisti, fornitori e logistica del progetto.",
+"Coordinar las compras, los proveedores y la logística del proyecto.",
+"统筹采购、供应商与项目物流。",
+"統籌採購、供應商與項目物流。",
+"調達、サプライヤー、プロジェクトの物流を調整します。"
+],
+"Delivery & Installation": [
+"Livraison et pose",
+"Lieferung & Montage",
+"Consegna e installazione",
+"Entrega e instalación",
+"配送与安装",
+"配送與安裝",
+"配送と設置"
+],
+"Coordinate delivery and installation with your project team.": [
+"Coordonner la livraison et la pose avec l’équipe de votre projet.",
+"Lieferung und Montage mit Ihrem Projektteam koordinieren.",
+"Coordinare consegna e installazione con il team del progetto.",
+"Coordinar la entrega y la instalación con el equipo de tu proyecto.",
+"与您的项目团队统筹配送与安装。",
+"與您的項目團隊統籌配送與安裝。",
+"プロジェクトチームと配送・設置を調整します。"
+],
+"One design for every room, finish and piece of joinery.": [
+"Une seule conception pour chaque pièce, finition et menuiserie.",
+"Ein Entwurf für jeden Raum, jede Oberfläche und jedes Möbelstück.",
+"Un unico progetto per ogni stanza, finitura e arredo.",
+"Un solo diseño para cada estancia, acabado y pieza de carpintería.",
+"一份设计，涵盖每个房间、饰面与木作。",
+"一份設計，涵蓋每個房間、飾面與木作。",
+"各部屋、仕上げ、造作家具をひとつのデザインで。"
+],
+"One point of contact and a clear programme for the work.": [
+"Un seul interlocuteur et un calendrier clair pour les travaux.",
+"Ein Ansprechpartner und ein klarer Zeitplan für die Arbeiten.",
+"Un unico referente e un programma chiaro per i lavori.",
+"Un solo interlocutor y un calendario claro para los trabajos.",
+"一位专属联系人，一份清晰的工作计划。",
+"一位專屬聯絡人，一份清晰的工作計劃。",
+"窓口はひとつ、作業の工程も明確に。"
+],
+"See All Solutions": [
+"Voir toutes les solutions",
+"Alle Lösungen ansehen",
+"Vedi tutte le soluzioni",
+"Ver todas las soluciones",
+"查看全部方案",
+"查看全部方案",
+"すべてのソリューションを見る"
+],
+"How We Plan a Bespoke Kitchen": [
+"Comment nous planifions une cuisine sur mesure",
+"So planen wir eine Maßküche",
+"Come progettiamo una cucina su misura",
+"Cómo planificamos una cocina a medida",
+"我们如何规划定制厨房",
+"我們如何規劃訂製廚房",
+"オーダーメイドキッチンの進め方"
+],
+"How We Choose Materials and Finishes": [
+"Comment nous choisissons matériaux et finitions",
+"So wählen wir Materialien und Oberflächen",
+"Come scegliamo materiali e finiture",
+"Cómo elegimos materiales y acabados",
+"我们如何挑选材料与饰面",
+"我們如何挑選材料與飾面",
+"素材と仕上げの選び方"
+],
+"How a Whole-Home Project Runs": [
+"Le déroulement d’un projet pour toute la maison",
+"So läuft ein Projekt fürs ganze Zuhause ab",
+"Come si svolge un progetto per tutta la casa",
+"Cómo se desarrolla un proyecto de todo el hogar",
+"全屋项目如何进行",
+"全屋項目如何進行",
+"住まい全体のプロジェクトの流れ"
+],
+"Materials & Finishes": [
+"Matériaux et finitions",
+"Materialien & Oberflächen",
+"Materiali e finiture",
+"Materiales y acabados",
+"材料与饰面",
+"材料與飾面",
+"素材と仕上げ"
+],
+"Made-to-measure BOLONI joinery, as exclusive Leinster partner.": [
+"Menuiserie BOLONI sur mesure, en tant que partenaire exclusif du Leinster.",
+"BOLONI-Maßmöbel, als exklusiver Partner in Leinster.",
+"Arredi BOLONI su misura, come partner esclusivo per il Leinster.",
+"Carpintería BOLONI a medida, como socio exclusivo en Leinster.",
+"BOLONI 定制木作，伦斯特省独家合作伙伴。",
+"BOLONI 訂製木作，倫斯特省獨家合作夥伴。",
+"レンスター地方の独占パートナーとして、BOLONIの造作家具を提供。"
+],
+"Architects, engineers and trades, as your home needs them.": [
+"Architectes, ingénieurs et artisans, selon les besoins de votre maison.",
+"Architekten, Ingenieure und Handwerker, je nach Bedarf Ihres Zuhauses.",
+"Architetti, ingegneri e artigiani, in base alle esigenze della casa.",
+"Arquitectos, ingenieros y oficios, según lo que necesite tu hogar.",
+"按住宅所需，安排建筑师、工程师与施工人员。",
+"按住宅所需，安排建築師、工程師與施工人員。",
+"住まいに応じて建築家、エンジニア、職人が参加します。"
 ]
 });
 const REDESIGN_LANGS=['fr','de','it','es','zh-Hans','zh-Hant','ja'];

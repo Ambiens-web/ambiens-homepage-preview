@@ -251,8 +251,8 @@ Object.keys(rules).forEach(n=>document.getElementById('f-'+n).addEventListener('
 /* Hero: three slides. Only the visitor changes them, so nothing moves while someone is reading. */
 const HERO_COPY=[
   {eyebrow:'Home Design & Coordinated Solutions',title:'One Home.|One *Considered*|Vision.',description:'Thoughtfully bringing together design, bespoke interiors, product selection and coordinated solutions for contemporary living.',action:'Explore Our Solutions',href:'/services/'},
-  {eyebrow:'Bespoke Joinery',title:'Bespoke kitchens and interiors, thoughtfully designed for your home.',description:'Explore made-to-measure kitchens, wardrobes and interior joinery designed around your space.',action:'Explore our joinery',href:'/joinery/'},
-  {eyebrow:'Extensions & Garden Rooms',title:'More room for living, from extensions to garden rooms.',description:'Create space to work, relax or gather, with design and project coordination shaped around your home.',action:'Plan your extra space',href:'/services/extensions/'}
+  {eyebrow:'Bespoke Joinery',title:'Bespoke Kitchens|and Interiors.',description:'Explore made-to-measure kitchens, wardrobes and interior joinery designed around your space.',action:'Explore our joinery',href:'/joinery/'},
+  {eyebrow:'Extensions & Garden Rooms',title:'More Room|for Living.',description:'Create space to work, relax or gather, with design and project coordination shaped around your home.',action:'Plan your extra space',href:'/services/extensions/'}
 ];
 const hero=document.getElementById('top');
 const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
